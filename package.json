@@ -23,7 +23,8 @@
     "test:typecheck": "flow check",
     "watch": "run-p watch:*",
     "watch:webpack": "webpack-dev-server --config webpack.doc.config.js",
-    "watch:pug": "pug -o docs --watch src/doc/index.pug"
+    "watch:pug": "pug -o docs --watch src/doc/index.pug",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
