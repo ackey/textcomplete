@@ -54,9 +54,10 @@ export default class DropdownItem {
     a.innerHTML = this.searchResult.render()
     li.appendChild(a)
     this._el = li
-    li.addEventListener("mousedown", this.onClick)
+    // li.addEventListener("mousedown", this.onClick)
     li.addEventListener("mouseover", this.onMouseover)
-    li.addEventListener("touchstart", this.onClick)
+    // li.addEventListener("touchstart", this.onClick)
+    li.addEventListener("click", this.onClick)
     return li
   }
 
